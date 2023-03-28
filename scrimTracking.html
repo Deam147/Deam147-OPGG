@@ -1,0 +1,47 @@
+<div class="content-container" id="content-container">
+  <link rel="stylesheet" href="./css/scrimTracking.css" />
+  <div class="oneBlock">
+    <h3>Scrim Tracking</h3>
+    <p>
+      El Scrim Tracking es fundamental para el desarrollo de un equipo a lo
+      largo del split por lo tanto he desarrollo distintas soluciones
+      dependiendo donde compita el equipo y el acceso a información que este
+      tenga
+    </p>
+    <p>
+      Para los equipos con acceso a Bayes (El API Oficial de Riot para
+      estadisticas) uso mi aplicación en la cual se puede acceder a todas las
+      partidas de scrims y mirar la información disponible en mi aplicación
+      (Match History, Team Stats, Wards, Pathings, Drafts, etc)
+    </p>
+    <a
+      hx-get="./myApp.html"
+      hx-trigger="click"
+      hx-target="#content-container"
+      hx-swap="outerHTML"
+      hx-push-url="false"
+      hx-trigger="changed"
+      class="scrimTrackingButton text-white bayesAppButton"
+      >Ver mi app de Bayes
+    </a>
+    <p>
+      Sin embargo todavía hay ligas en las cuales Riot no brinda acceso a Bayes
+      a sus equipos, para esto he desarrollado una aplicación la cual se conecta
+      al cliente de League of Legends y recolecta las estadisticas y los drafts
+      de las scrims, posteriormente almacena estas estadisticas en una base de
+      datos la cual puede ser consultada mediante un dashboard
+    </p>
+    <div class="youtube-container">
+      <iframe
+        width="1903"
+        height="760"
+        src="https://www.youtube.com/embed/BuUfO_uQPP8"
+        title="LCU APP - Scrim &amp; Drafts Stats - Deam147"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        class="video"
+      ></iframe>
+    </div>
+  </div>
+</div>
